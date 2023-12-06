@@ -48,3 +48,20 @@ As an exercise, write a function that takes a string as an argument and displays
 Another way to write a traversal is with a for loop:
 for letter in fruit:
     print(letter)
+Each time through the loop, the next character in the string is assigned to the variable
+letter. The loop continues until no characters are left.
+The following example shows how to use concatenation (string addition) and a for loop to generate an abecedarian series (that is, in alphabetical order). In Robert McCloskey’s book Make Way for Ducklings, the names of the ducklings are Jack, Kack, Lack, Mack, Nack, Ouack, Pack, and Quack. This loop outputs these names in order:
+prefixes = 'JKLMNOPQ'
+suffix = 'ack'
+for letter in prefixes:
+    print(letter + suffix)
+The output is:
+Jack
+Kack
+Lack
+Mack
+Nack
+Oack
+Pack
+Qack
+Of course, that’s not quite right because “Ouack” and “Quack” are misspelled. As an exercise, modify the program to fix this error.
